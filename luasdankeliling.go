@@ -26,6 +26,8 @@ func main() {
 		} else if pilihan == 5 {
 			fmt.Println("Terimakasih telah menggunakan program ini.")
 			jalan = false
+
+			//hitung persegi//
 		} else if pilihan == 1 {
 			var sisi float64
 			for sisi <= 0 {
@@ -35,6 +37,7 @@ func main() {
 			fmt.Println("Luas persegi :", sisi*sisi)
 			fmt.Println("Keliling persegi :", 4*sisi)
 
+			//hitung segitiga//
 		} else if pilihan == 2 {
 			var alas, tinggi, s1, s2, s3 float64
 
@@ -63,6 +66,7 @@ func main() {
 			fmt.Println("Luas segitiga :", 0.5*alas*tinggi)
 			fmt.Println("Keliling segitiga :", s1+s2+s3)
 
+			//hitung lingkaran//
 		} else if pilihan == 3 {
 			var r float64
 			const phi = 3.14
@@ -75,6 +79,7 @@ func main() {
 			fmt.Println("Luas lingkaran :", phi*r*r)
 			fmt.Println("Keliling lingkaran :", 2*phi*r)
 
+			//hitung trapesium//
 		} else if pilihan == 4 {
 			var a, b, tinggi, s1, s2 float64
 
@@ -104,7 +109,7 @@ func main() {
 
 		}
 		if jalan {
-			fmt.Print("\n Apakah inin lanjut menghitung (y/n) :")
+			fmt.Print("\n Apakah ingin lanjut menghitung (y/n) :")
 			fmt.Scan(&lanjut)
 
 			if lanjut == "n" || lanjut == "N" {
