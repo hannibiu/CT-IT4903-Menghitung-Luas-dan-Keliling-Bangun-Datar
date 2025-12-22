@@ -122,7 +122,6 @@ func main() {
 				fmt.Println("Terima kasih telah menggunakan program ini.")
 				jalan = false
 			}
-
 		}
 	}
 }
